@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 import Box from '@mui/material/Box';
 
-import { useBoolean } from 'src/hooks/use-boolean';
-import { useResponsive } from 'src/hooks/use-responsive';
+import { useBoolean } from '../../hooks/use-boolean';
+import { useResponsive } from '../../hooks/use-responsive';
 
-import { useSettingsContext } from 'src/components/settings';
+import { useSettingsContext } from '../../components/settings';
 
 import Main from './main';
 import Header from './header';

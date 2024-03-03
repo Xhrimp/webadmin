@@ -1,27 +1,27 @@
 /* eslint-disable perfectionist/sort-imports */
-import 'src/global.css';
+import '../global.css';
 
 // i18n
-import 'src/locales/i18n';
+import '../locales/i18n';
 
 // ----------------------------------------------------------------------
 
 import PropTypes from 'prop-types';
 
-import { LocalizationProvider } from 'src/locales';
+import { LocalizationProvider } from '../locales';
 
-import ThemeProvider from 'src/theme';
-import { primaryFont } from 'src/theme/typography';
+import ThemeProvider from '../theme';
+import { primaryFont } from '../theme/typography';
 
-import ProgressBar from 'src/components/progress-bar';
-import { MotionLazy } from 'src/components/animate/motion-lazy';
-import SnackbarProvider from 'src/components/snackbar/snackbar-provider';
-import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
+import ProgressBar from '../components/progress-bar';
+import { MotionLazy } from '../components/animate/motion-lazy';
+import SnackbarProvider from '../components/snackbar/snackbar-provider';
+import { SettingsDrawer, SettingsProvider } from '../components/settings';
 
-import { CheckoutProvider } from 'src/sections/checkout/context';
+import { CheckoutProvider } from '../sections/checkout/context';
 
-import { AuthProvider } from 'src/auth/context/jwt';
-import DashboardLayout from 'src/layouts/dashboard';
+import { AuthProvider } from '../auth/context/jwt';
+import DashboardLayout from '../layouts/dashboard';
 // import { AuthProvider } from 'src/auth/context/auth0';
 // import { AuthProvider } from 'src/auth/context/amplify';
 // import { AuthProvider } from 'src/auth/context/firebase';

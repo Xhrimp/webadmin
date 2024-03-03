@@ -5,12 +5,12 @@ import { m } from 'framer-motion';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import { RouterLink } from 'src/routes/components';
+import { RouterLink } from '../../routes/components';
 
-import CompactLayout from 'src/layouts/compact';
-import { PageNotFoundIllustration } from 'src/assets/illustrations';
+import CompactLayout from '../../layouts/compact';
+import { PageNotFoundIllustration } from '../../assets/illustrations';
 
-import { varBounce, MotionContainer } from 'src/components/animate';
+import { varBounce, MotionContainer } from '../../components/animate';
 
 // ----------------------------------------------------------------------
 

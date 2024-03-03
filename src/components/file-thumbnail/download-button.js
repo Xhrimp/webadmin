@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 
-import { bgBlur } from 'src/theme/css';
+import { bgBlur } from '../../theme/css';
 
 import Iconify from '../iconify';
 

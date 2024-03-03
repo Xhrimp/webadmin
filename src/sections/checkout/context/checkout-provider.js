@@ -7,9 +7,9 @@ import { useMemo, useEffect, useCallback } from 'react';
 import { paths } from '../../../routes/paths';
 import { useRouter } from '../../../routes/hooks';
 
-import { getStorage, useLocalStorage } from 'src/hooks/use-local-storage';
+import { getStorage, useLocalStorage } from '../../../hooks/use-local-storage';
 
-import { PRODUCT_CHECKOUT_STEPS } from 'src/_mock/_product';
+import { PRODUCT_CHECKOUT_STEPS } from '../../../_mock/_product';
 
 import { CheckoutContext } from './checkout-context';
 

@@ -7,9 +7,9 @@ import PropTypes from 'prop-types';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 
-import { useLocales } from 'src/locales';
+import { useLocales } from '../locales';
 
-import { useSettingsContext } from 'src/components/settings';
+import { useSettingsContext } from '../components/settings';
 
 // system
 import { palette } from './palette';

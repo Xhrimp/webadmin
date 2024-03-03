@@ -2,11 +2,11 @@ import { useMemo } from 'react';
 
 import { paths } from '../../routes/paths';
 
-import { useTranslate } from 'src/locales';
+import { useTranslate } from '../../locales';
 
-import Label from 'src/components/label';
-import Iconify from 'src/components/iconify';
-import SvgColor from 'src/components/svg-color';
+import Label from '../../components/label';
+import Iconify from '../../components/iconify';
+import SvgColor from '../../components/svg-color';
 
 // ----------------------------------------------------------------------
 

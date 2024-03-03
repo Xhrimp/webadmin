@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 
-import { useResponsive } from 'src/hooks/use-responsive';
+import { useResponsive } from '../../hooks/use-responsive';
 
-import { bgBlur } from 'src/theme/css';
+import { bgBlur } from '../../theme/css';
 
-import Iconify from 'src/components/iconify';
-import { useSettingsContext } from 'src/components/settings';
+import Iconify from '../../components/iconify';
+import { useSettingsContext } from '../../components/settings';
 
 import { NAV } from '../config-layout';
 

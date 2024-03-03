@@ -4,24 +4,22 @@ import PropTypes from 'prop-types';
 
 import Box from '@mui/material/Box';
 
-import { useResponsive } from 'src/hooks/use-responsive';
+import { useResponsive } from '../../hooks/use-responsive';
 
-import { useSettingsContext } from 'src/components/settings';
+import { useSettingsContext } from '../../components/settings';
 
 import { NAV, HEADER } from '../config-layout';
 
-import UserTableToolbar from 'src/sections/user/user-table-toolbar';
+import UserTableToolbar from '../../sections/user/user-table-toolbar';
 
-import { _roles, _userList, USER_STATUS_OPTIONS } from 'src/_mock';
-import { PRODUCT_STOCK_OPTIONS } from 'src/_mock';
-
+import { _roles, _userList, USER_STATUS_OPTIONS } from '../../_mock';
+import { PRODUCT_STOCK_OPTIONS } from '../../_mock';
 
 // ----------------------------------------------------------------------
 
 const SPACING = 8;
 
 export default function Main({ children, sx, ...other }) {
-
   const settings = useSettingsContext();
 
   const lgUp = useResponsive('up', 'lg');
@@ -72,8 +70,7 @@ export default function Main({ children, sx, ...other }) {
       }}
       {...other}
     >
-      {children}
-{' '}
+      {children}{' '}
     </Box>
   );
 }

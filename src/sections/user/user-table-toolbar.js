@@ -12,8 +12,8 @@ import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 
-import Iconify from 'src/components/iconify';
-import CustomPopover, { usePopover } from 'src/components/custom-popover';
+import Iconify from '../../components/iconify';
+import CustomPopover, { usePopover } from '../../components/custom-popover';
 
 // ----------------------------------------------------------------------
 
