@@ -7,16 +7,14 @@ import PropTypes from 'prop-types';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 
-import { useLocales } from '../locales';
-
-import { useSettingsContext } from '../components/settings';
-
 // system
 import { palette } from './palette';
 import { shadows } from './shadows';
+import { useLocales } from '../locales';
 import { typography } from './typography';
-// options
 import RTL from './options/right-to-left';
+import { useSettingsContext } from '../components/settings';
+// options
 import { customShadows } from './custom-shadows';
 import { componentsOverrides } from './overrides';
 import { createPresets } from './options/presets';

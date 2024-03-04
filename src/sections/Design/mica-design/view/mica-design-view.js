@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import { useSettingsContext } from '../../../../components/settings';
-import { _bookings } from '../../../../_mock';
 
 import PodDesignSearch from '../mica-design-search';
 import Grid from '@mui/material/Grid';
@@ -10,6 +8,9 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import MicaDesignTable from '../mica-design-table';
 import MicaDesignOption from '../mica-design-option';
+
+import { _bookings } from '../../../../_mock';
+import { useSettingsContext } from '../../../../components/settings';
 
 export default function MicaDesignView() {
   const settings = useSettingsContext();

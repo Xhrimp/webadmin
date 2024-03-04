@@ -1,7 +1,7 @@
 'use client';
 
 import PropTypes from 'prop-types';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 import Card from '@mui/material/Card';
 import Table from '@mui/material/Table';
@@ -11,11 +11,11 @@ import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import CardHeader from '@mui/material/CardHeader';
 import ListItemText from '@mui/material/ListItemText';
-import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
+import TableContainer from '@mui/material/TableContainer';
 import IconButton from '@mui/material/IconButton';
-import Iconify from '../../../components/iconify/iconify';
 import Rating from '@mui/material/Rating';
+import Iconify from '../../../components/iconify/iconify';
 
 import Label from '../../../components/label';
 import Scrollbar from '../../../components/scrollbar';
@@ -76,26 +76,6 @@ function StoreTableRow({ row }) {
   const lightMode = theme.palette.mode === 'light';
 
   const popover = usePopover();
-
-  const handleDownload = () => {
-    popover.onClose();
-    console.info('DOWNLOAD', row.id);
-  };
-
-  const handlePrint = () => {
-    popover.onClose();
-    console.info('PRINT', row.id);
-  };
-
-  const handleShare = () => {
-    popover.onClose();
-    console.info('SHARE', row.id);
-  };
-
-  const handleDelete = () => {
-    popover.onClose();
-    console.info('DELETE', row.id);
-  };
 
   const [value, setValue] = useState(4);
 

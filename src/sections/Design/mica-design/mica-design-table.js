@@ -1,6 +1,6 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+
 import Card from '@mui/material/Card';
 import Table from '@mui/material/Table';
 import Avatar from '@mui/material/Avatar';
@@ -10,15 +10,14 @@ import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import CardHeader from '@mui/material/CardHeader';
 import ListItemText from '@mui/material/ListItemText';
-import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
-import TablePagination from '@mui/material/TablePagination';
+import TableContainer from '@mui/material/TableContainer';
+import { IconButton } from '@mui/material';
 
 import { TableHeadCustom } from '../../../components/table';
 import { usePopover } from '../../../components/custom-popover';
-import { IconButton } from '@mui/material';
-import Iconify from '../../../components/iconify/iconify';
 import Scrollbar from '../../../components/scrollbar';
+import Iconify from '../../../components/iconify/iconify';
 
 export default function MicaDesignTable({ title, subheader, tableLabels, tableData, ...other }) {
   return (
@@ -37,15 +36,6 @@ export default function MicaDesignTable({ title, subheader, tableLabels, tableDa
           </Table>
         </Scrollbar>
       </TableContainer>
-      {/* <TablePagination
-        rowsPerPageOptions={[5, 10, 25]}
-        component="div"
-        count={tableData.length}
-        rowsPerPage={5}
-        page={page}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-      /> */}
       <Divider sx={{ borderStyle: 'dashed' }} />
     </Card>
   );
@@ -64,26 +54,6 @@ function MicaDesignTableRow({ row }) {
   const lightMode = theme.palette.mode === 'light';
 
   const popover = usePopover();
-
-  const handleDownload = () => {
-    popover.onClose();
-    console.info('DOWNLOAD', row.id);
-  };
-
-  const handlePrint = () => {
-    popover.onClose();
-    console.info('PRINT', row.id);
-  };
-
-  const handleShare = () => {
-    popover.onClose();
-    console.info('SHARE', row.id);
-  };
-
-  const handleDelete = () => {
-    popover.onClose();
-    console.info('DELETE', row.id);
-  };
 
   return (
     <>
@@ -119,9 +89,9 @@ function MicaDesignTableRow({ row }) {
         </TableCell>
 
         <TableCell style={{ maxWidth: 50 }}>
-          <IconButton color={popover.open ? 'inherit' : 'default'}></IconButton>
-          <Iconify icon="typcn:delete" />
-          <Iconify icon="ic:baseline-edit" />
+          <IconButton color={popover.open ? 'inherit' : 'default'}>
+            <Iconify icon="typcn:delete" />
+          </IconButton>
         </TableCell>
       </TableRow>
     </>

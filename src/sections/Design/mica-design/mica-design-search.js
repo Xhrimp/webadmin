@@ -3,6 +3,7 @@
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
+
 import Iconify from '../../../components/iconify/iconify';
 
 export default function MicaDesignSearch() {

@@ -1,17 +1,16 @@
-import React from 'react';
-import { useState } from 'react';
+import { React, useState } from 'react';
 import { Grid, IconButton, InputAdornment, Paper } from '@mui/material';
-import Iconify from '../../../components/iconify/iconify';
 import TextField from '@mui/material/TextField';
-import Image from '../../../components/image/image';
 import Input from '@mui/material/Input';
+import Iconify from '../../../components/iconify/iconify';
+import Image from '../../../components/image/image';
 
 export default function FaceCutLabel() {
   const [src, setSrc] = useState('');
   const [img, setImg] = useState('');
   const handleChange = (event) => {
     setSrc(event.target.value);
-    setImg(<Image src={event.target.value} sx={{ width: '100%' }}></Image>);
+    setImg(<Image src={event.target.value} sx={{ width: '100%' }} />);
   };
 
   return (

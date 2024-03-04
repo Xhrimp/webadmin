@@ -1,8 +1,5 @@
-import { countries } from '../assets/data';
-
 import { _mock } from './_mock';
-
-// ----------------------------------------------------------------------
+import { countries } from '../assets/data';
 
 export const USER_STATUS_OPTIONS = [
   { value: 'active', label: 'Active' },

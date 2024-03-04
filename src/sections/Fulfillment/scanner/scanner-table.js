@@ -112,48 +112,13 @@ function ScannerTableRow({ row }) {
 
         <TableCell style={{ maxWidth: 50 }}>Status</TableCell>
 
-        <TableCell style={{ minWidth: 120 }}></TableCell>
+        <TableCell style={{ minWidth: 120 }}>Something</TableCell>
 
-        <TableCell style={{ minWidth: 100 }}></TableCell>
+        <TableCell style={{ minWidth: 100 }}>Something</TableCell>
 
-        <TableCell style={{ minWidth: 100 }}></TableCell>
+        <TableCell style={{ minWidth: 100 }}>Something</TableCell>
       </TableRow>
       {/* <ScannerSubRow row={row} /> */}
-    </>
-  );
-}
-
-ScannerTableRow.propTypes = {
-  row: PropTypes.object,
-};
-
-function ScannerSubRow({ row }) {
-  const popover = usePopover();
-
-  return (
-    <>
-      <TableRow>
-        <TableCell style={{ maxWidth: 50 }}>
-          <Avatar
-            variant="rounded"
-            alt={row.destination.name}
-            src={row.destination.coverUrl}
-            sx={{ position: 'static', mr: 2, width: 100, height: 100 }}
-          />
-        </TableCell>
-        <TableCell style={{ minWidth: '80%' }} colSpan={4}>
-          <ListItemText
-            primary={row.customer.name}
-            secondary={row.customer.phoneNumber}
-            primaryTypographyProps={{ typography: 'body2', noWrap: true }}
-            secondaryTypographyProps={{
-              mt: 0.5,
-              component: 'span',
-              typography: 'caption',
-            }}
-          />
-        </TableCell>
-      </TableRow>
     </>
   );
 }

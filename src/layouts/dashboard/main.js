@@ -12,8 +12,7 @@ import { NAV, HEADER } from '../config-layout';
 
 import UserTableToolbar from '../../sections/user/user-table-toolbar';
 
-import { _roles, _userList, USER_STATUS_OPTIONS } from '../../_mock';
-import { PRODUCT_STOCK_OPTIONS } from '../../_mock';
+import { _roles, _userList, USER_STATUS_OPTIONS, PRODUCT_STOCK_OPTIONS } from '../../_mock';
 
 // ----------------------------------------------------------------------
 
