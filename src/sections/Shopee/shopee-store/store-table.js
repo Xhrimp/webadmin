@@ -39,26 +39,7 @@ export default function StoreTable({ title, subheader, tableLabels, tableData, .
           </Table>
         </Scrollbar>
       </TableContainer>
-      {/* <TablePagination
-        rowsPerPageOptions={[5, 10, 25]}
-        component="div"
-        count={tableData.length}
-        rowsPerPage={5}
-        page={page}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-      /> */}
       <Divider sx={{ borderStyle: 'dashed' }} />
-
-      {/* <Box sx={{ p: 2, textAlign: 'right' }}>
-        <Button
-          size="small"
-          color="inherit"
-          endIcon={<Iconify icon="eva:arrow-ios-forward-fill" width={18} sx={{ ml: -0.5 }} />}
-        >
-          View All
-        </Button>
-      </Box> */}
     </Card>
   );
 }

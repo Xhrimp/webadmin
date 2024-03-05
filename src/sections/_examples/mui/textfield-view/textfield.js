@@ -8,7 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 
 import ComponentBlock from '../../component-block';
-
 import Iconify from '../../../../components/iconify/iconify';
 
 // ----------------------------------------------------------------------

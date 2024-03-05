@@ -1,13 +1,14 @@
 'use client';
 
+import React from 'react';
+
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import { useSettingsContext } from '../../../../components/settings';
-import { _bookings } from '../../../../_mock';
-
-import React from 'react';
 import StoreOverview from '../store-overview';
 import StoreTable from '../store-table';
+
+import { useSettingsContext } from '../../../../components/settings';
+import { _bookings } from '../../../../_mock';
 
 export default function ShopeeStoreView() {
   const settings = useSettingsContext();

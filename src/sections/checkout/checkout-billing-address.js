@@ -10,7 +10,7 @@ import Iconify from 'src/components/iconify';
 
 import { useCheckoutContext } from './context';
 import CheckoutSummary from './checkout-summary';
-import { AddressItem, AddressNewForm } from '../address';
+import { AddressItem, AddressNewForm } from '../address/';
 
 // ----------------------------------------------------------------------
 
